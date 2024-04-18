@@ -1,0 +1,169 @@
+{
+    "Title": "Undead",
+    "Credits": "Created by Shuhao Lu(slu51@ucsc.edu).",
+    "InitialLocation": "Dark Room",
+    "SnoozeCount": 0,
+    "Locations": {
+        "Dark Room": {
+            "Body": "You wake up in a dark room.",
+            "Choices": [
+                {
+                    "Text": "Wake up",
+                    "Target": "Wake up"
+                },
+                {
+                    "Text": "Snooze",
+                    "Target": "Dark Room"
+                }
+                
+            ]
+        },
+        "Wake up": {
+            "Body": "You wonder what happened",
+            "Choices": [
+                {
+                    "Text": "Search the room",
+                    "Target": "Radio"
+                },
+                {
+                    "Text": "Do nothing",
+                    "Target": "Zombie eat"
+                }
+            ]
+        },
+        "Radio": {
+            "Body": "You find a dusty radio on the table",
+            "Choices": [
+                {
+                    "Text": "Use the radio",
+                    "Target": "ToggleRadio"
+                },
+                {
+                    "Text": "Do nothing",
+                    "Target": "Zombie eat"
+                }
+            ]
+        },
+        "ToggleRadio": {
+            "Body": "You toggle the radio, static noise fills the room...",
+            "Choices": [
+                {
+                    "Text": "Toggle the radio again",
+                    "Target": "ToggleRadio1"
+                },
+                {
+                    "Text": "Stop using the radio",
+                    "Target": "Radio" 
+                }
+            ]
+        },
+        "ToggleRadio1": {
+            "Body": "The government is giving up on Santa Cruz, All survivors need to go to Capitola right now!",
+            "Choices": [
+                {
+                    "Text": "Toggle the radio again",
+                    "Target": "ToggleRadio"
+                },
+                {
+                    "Text": "Stop using the radio",
+                    "Target": "Radio" 
+                },
+                {
+                    "Text": "Find a way out",
+                    "Target": "Room2" 
+                }
+            ]
+        },
+        "Room2": {
+            "Body": "You Realize there might be a National crisis now and you gotta find a way out",
+            "Choices": [
+                {
+                    "Text": "Take a peak at the window",
+                    "Target": "Peak"
+                },
+                {
+                    "Text": "Open the bath room door",
+                    "Target": "Zombie eat" 
+                },
+                {
+                    "Text": "Try open the door",
+                    "Target": "Zombie wait" 
+                }
+            ]
+        },
+        "Peak": {
+            "Body": "You take a peak at the window and saw countless zombie on the street, you realize there must be a virus spread in your city and you are in serious danger right now. You saw a sharp surgery knife put on the window, maybe you can do something with it",
+            "Choices": [
+                {
+                    "Text": "Pick up the knife",
+                    "Target": "Knife"
+                },
+                {
+                    "Text": "Leave it and open the door",
+                    "Target": "Zombie wait" 
+                }
+            ]
+        },
+        "Zombie wait": {
+            "Body": "A zombie seems to be waiting you out side. And he seems to have a good apetite",
+            "Choices": [
+                {
+                    "Text": "The end 2",
+                    "Target": "Dark Room"
+                } 
+            ]
+        },
+        "Knife": {
+            "Body": "You Picked up the knife and hold it tight",
+            "Choices": [
+                {
+                    "Text": "Carefully open the door",
+                    "Target": "Open"
+                },
+                {
+                    "Text": "Jump out the window",
+                    "Target": "Suicide" 
+                }
+            ]
+        },
+        "Open": {
+            "Body": "A zombie apear outside the door waiting for you, but you are faster, You stabbed him with your knife and he dropped on the floor bleeding green blood",
+            "Choices": [
+                {
+                    "Text": "Go to the hall way",
+                    "Target": "Out of room"
+                }
+            ]
+        },
+        "Suicide": {
+            "Body": "What are you thinking man?",
+            "Choices": [
+                {
+                    "Text": "You died",
+                    "Target": "Dark Room"
+                }
+            ]
+        },
+        "Out of room": {
+            "Body": "You finnally got out of the room safe, now what's next?",
+            "Choices": [
+                {
+                    "Text": "To be continued",
+                    "Target": "Safe"
+                }
+            ]
+        },
+        "Safe": {
+            "Body": "Thank you for playing!"
+        },
+        "Zombie eat": {
+            "Body": "The Zombies break in and eat your brain!",
+            "Choices": [
+                {
+                    "Text": "The end 1",
+                    "Target": "Dark Room"
+                }
+            ]
+        }
+    }
+}
